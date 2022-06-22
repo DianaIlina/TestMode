@@ -24,6 +24,6 @@ jobs:
       - name: Grant execute permission for gradlew
         run: chmod +x gradlew
       - name: Run server
-        run: java -jar ./artifacts/app-ibank.jar -P:profile=test
+        run: java -jar ./artifacts/app-ibank.jar -P:profile=test &
       - name: Build with Gradle
         run: ./gradlew test --info
